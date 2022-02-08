@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Nunito+Sans&display=swap');
+
+/* css reset */
+:root {
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Nunito Sans', sans-serif;
+    --text: #1a1a1a;
+    --primary: #eb15ff;
+    --secondary: #fff;
+}
+
+*, *::before, *::after {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container + navigation css */
+.container{
+    width: 80vw;
+    margin: 1vw 10vw;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navlinks li{
+    list-style: none;
+    display: inline;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.navlinks a:hover{
+    text-decoration: none;
+    color: var(--text);
+    background-color: var(--primary);
+}
+
+/* hero section */
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+}
+
+.hero h1{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4rem;
+}
+
+.hero p{
+    width: 40vw;
+    margin: 1rem;
+}
+
+/* info section */
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem;
+}
+
+.info p{
+    width: 40vw;
+    margin: 1rem;
+}
+
+.aboutinfo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem;
+}
+
+.aboutinfo p{
+    width: 40vw;
+    margin: 1rem;
+}
